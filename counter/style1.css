@@ -1,0 +1,110 @@
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .radial-bar {
+    width: 22%; /* Adjust width for 4 circles in one line */
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .radial-bar svg {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .radial-bar .progress-bar,
+  .path {
+    stroke-width: 10;
+    fill: transparent;
+    stroke-linecap: round;
+  }
+  
+  .progress-bar {
+    stroke: black;
+    stroke-dasharray: 502;
+    animation: animation-bar 1s linear forwards;
+  }
+  
+   .radial-bar .percentage{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: shortText 0.3s 1s linear forwards;
+    color: black;
+}
+  
+  .radial-bar .text {
+    margin-top: 10px; /* Space for text under the percentage */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .radial-bar p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+  }
+  /* .path{
+    stroke-width: 10;
+    stroke: skyblue;
+    fill: transparent;
+    stroke-dasharray:502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+} */
+.path {
+    stroke-width: 10;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+  }
+  
+.path-1{animation:animation-path1 1s 1s linear forwards;}
+.path-2{animation:animation-path2 1s 1s linear forwards;}
+.path-3{animation:animation-path3 1s 1s linear forwards;}
+.path-4{animation:animation-path4 1s 1s linear forwards;}
+
+@keyframes animation-path1{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+@keyframes animation-path2{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+@keyframes animation-path3{
+    100%{
+        stroke-dashoffset:250;
+    }
+}
+@keyframes animation-path4{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+  @media (max-width: 768px) {
+    .radial-bar {
+      width: 48%; /* Stack two circles in one line */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .radial-bar {
+      width: 100%; /* Stack all in one line */
+    }
+  }
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Radial Bars</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="radial-bars">
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color: #ff7f7f; stop-opacity: 1" /> <!-- Light Red -->
+                  <stop offset="20%" style="stop-color: #ffb74d; stop-opacity: 1" /> <!-- Light Orange -->
+                  <stop offset="40%" style="stop-color: #ffeb3b; stop-opacity: 1" /> <!-- Light Yellow -->
+                  <stop offset="60%" style="stop-color: #81c784; stop-opacity: 1" /> <!-- Light Green -->
+                  <stop offset="80%" style="stop-color: #64b5f6; stop-opacity: 1" /> <!-- Light Blue -->
+                  <stop offset="100%" style="stop-color: #ba68c8; stop-opacity: 1" /> <!-- Light Purple -->
+                </linearGradient>
+              </defs>
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-1" cx="100" cy="100" r="80"stroke="url(#rainbowGradient)"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">UI/UX Design</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pretium gravida nisi
+            condimentum quam consectetur placerat et risus nisl.
+          </p>
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-2" cx="100" cy="100" r="80" stroke="url(#rainbowGradient)"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Digital Marketing</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pretium gravida nisi
+            condimentum quam consectetur placerat et risus nisl.
+          </p>
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-3" cx="100" cy="100" r="80" stroke="url(#rainbowGradient)"></circle>
+          </svg>
+          <div class="percentage">50%</div>
+          <div class="text">Business Analysis</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pretium gravida nisi
+            condimentum quam consectetur placerat et risus nisl.
+          </p>
+        </div>
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-4" cx="100" cy="100" r="80" stroke="url(#rainbowGradient)"></circle>
+          </svg>
+          <div class="percentage">100%</div>
+          <div class="text">Software Services</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pretium gravida nisi
+            condimentum quam consectetur placerat et risus nisl.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

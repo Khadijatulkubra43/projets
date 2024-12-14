@@ -1,0 +1,140 @@
+/* Reset basic styling */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Home page styling */
+  .homepage {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('/path/to/hero-image.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #e0e0e0;
+  }
+  
+  .btn-primary {
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e05555;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .categories-section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .category-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .category-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Featured Products Section */
+  .featured-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .featured-section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  
+  .featured-products {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .product-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .btn-secondary {
+    padding: 8px 20px;
+    background-color: #6b6bff;
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5555e0;
+  }
+  

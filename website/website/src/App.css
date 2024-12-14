@@ -1,0 +1,103 @@
+/* General styling for the app */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+/* Side Navbar */
+.side-navbar {
+  width: 250px;
+  height: 100vh;
+  background-color: #282c34;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.side-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-navbar ul li {
+  margin: 20px 0;
+}
+
+.side-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.side-navbar ul li a:hover {
+  background-color: #3c4048;
+  border-radius: 4px;
+}
+
+/* Main content styling */
+.content-container {
+  margin-left: 250px;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Centered form styles for login and signup */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .side-navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content-container {
+    margin-left: 0;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}

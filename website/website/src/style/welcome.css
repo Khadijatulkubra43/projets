@@ -1,0 +1,30 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #ffcccb; /* Light pinkish color */
+    text-align: center; /* Center text */
+  }
+  
+  .welcome-page h1 {
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .welcome-page a {
+    margin: 0 10px; /* Space between links */
+    padding: 10px 20px; /* Padding for button effect */
+    text-decoration: none; /* Remove underline from links */
+    color: #ff6f61; /* Text color */
+    background-color: white; /* Button background color */
+    border: 2px solid #ff6f61; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+  }
+  
+  .welcome-page a:hover {
+    background-color: #ff6f61; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+  
